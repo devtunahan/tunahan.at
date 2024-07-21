@@ -228,3 +228,28 @@ footer {
 a {
   color: white;
 }
+
+.language-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+}
+.language-toggle a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.language-toggle a:hover {
+  text-decoration: underline;
+}
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.name-container .name {
+  margin: 0;
+}
