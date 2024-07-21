@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tunahan Karakaya</title>
+  <style>
+    /* Styling for the container to align items */
+    .container {
+      position: relative; /* Ensure that child elements can be positioned relative to this */
+    }
+    .language-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 0; /* Align with the top of the container */
+    }
+    .language-toggle a {
+      text-decoration: none;
+      color: white; /* White text color */
+      margin-left: 10px;
+      font-weight: bold;
+    }
+    .language-toggle a:hover {
+      text-decoration: underline;
+    }
+    .name-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white; /* Ensure name text is white */
+    }
+    .name-container .name {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- Language toggler -->
+  <div class="language-toggle">
+    <a href="#" onclick="switchLanguage('en')">EN</a>
+    <a href="#" onclick="switchLanguage('de')">DE</a>
+  </div>
+
+  <!-- Name and language toggler aligned -->
+  <div class="name-container">
+    <h2 class="name">Tunahan Karakaya</h2>
+  </div>
+
+  <p class="occupation">Software Developer</p>
+  <p class="header-text">
+    Hi, studying Computer Science at JKU in Linz, I have a passion for designing and building web apps. I find joy in bringing ideas to life on the screen and love exploring the latest tech trends. Automating workflows to enhance efficiency is another area I enjoy diving into.
+    I'm also fascinated by psychology, especially when it comes to general knowledge and self-improvement. This interest fuels my curiosity and helps me grow both personally and professionally.
+    Feel free to explore my projects and reach out if you'd like to <a href="mailto:me@tunahan.at">connect</a>!
+  </p>
+  <h2>Tech, I am comfortable with</h2>
+  <div class="marquee marquee--8">
+    <img class="marquee__item" src="icons/c-sharp.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/confluence.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/creative-cloud.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/git.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/gnu-bash.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/java.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/jira.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/letter-c.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/mongodb.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/social.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/sql-server.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/unity.png" width="50" height="50" alt="">
+  </div>
+  <h2>Work</h2>
+  <div class="work-item">
+    <p class="left">Software Test Engineer</p>
+    <p class="center">Fronius International</p>
+    <p class="right">Jun 2023 – Feb 2024</p>
+  </div>
+  <div class="content">
+    <li class="content-list-item">Managed 61 tests in the test pipeline, ensuring their smooth execution.</li>
+    <li class="content-list-item">Developed and successfully implemented 23 new tests in the pipeline using the C# .NET Test Framework.</li>
+    <li class="content-list-item">Enhanced test automation processes, significantly improving efficiency.</li>
+    <li class="content-list-item">Submitted 10 bug reports to support ongoing quality assurance.</li>
+    <li class="content-list-item">Ensured adherence to quality standards and best practices.</li>
+  </div>
+  <br>
+  <h2>Education</h2>
+  <div class="education-item">
+    <p class="left">Bachelor of Science, Informatics</p>
+    <p class="center">JKU Linz</p>
+    <p class="right">Mar 2024 - current</p>
+  </div>
+  <div class="content">
+    <li class="content-list-item">
+      Data structures and algorithms 1, Electronics, Software development 1, Operating systems
+    </li>
+    <br>
+    <br>
+  <div class="education-item">
+    <p class="left">Matura, Informationstechnologie</p>
+    <p class="center">HTL Wels</p>
+    <p class="right">Sept 2017 – Jun 2022</p>
+  </div>
+  <div class="content">
+    <li class="content-list-item">
+      <b>Software Development:</b> OOP, data types, functions, interfaces, classes, data structures, networking, sockets, streams, threads, multithreading, JavaFX, JDBC
+    </li>
+    <li class="content-list-item">
+      <b>Project Management: </b>Requirements documentation, project handbook, diagrams, Agile methods
+    </li>
+    <li class="content-list-item">
+      <b>Systems Engineering: </b>Operating systems, processes/threads, deadlocks, memory management, file systems, Bash scripting, Arduino, decentralized systems, Raspberry Pi, full-stack web development (Vue.js, Node.js), virtual machines
+    </li>
+    <li class="content-list-item">
+      <b> Media Technology: </b>Video technology theory, HTML, CSS, JavaScript, Adobe Creative Cloud
+    </li>
+    <li class="content-list-item">
+      <b> Networking:</b> CCNA Routing & Switching, network configuration, Packet Tracer, Kali Linux, Wireshark
+    </li>
+    <li class="content-list-item">
+      <b>Information Systems:</b> Database systems, Microsoft SQL, normalization, GDPR, relational databases, ER diagrams, SAP, MongoDB
+    </li>
+  </div>  
+<br>
+<h2>Contact me</h2>
+<p>You can contact me via <a href="mailto:me@tunahan.at">email</a></p>
+<footer>
+  <div class="top-line"></div>
+  <div class="footer-content">
+      <span class="name-footer">Tunahan Karakaya</span>
+      <span class="rights">All rights reserved</span>
+  </div>
+</footer>
+</div>
+
+<script>
+  function switchLanguage(lang) {
+    const path = window.location.pathname;
+    const newPath = path.replace(/\/(en|de)\//, `/${lang}/`);
+    window.location.pathname = newPath;
+  }
+</script>
+</body>
+</html>
