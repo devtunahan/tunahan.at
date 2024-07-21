@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+body {
+font-family: 'Source Code Pro';
+color: white;
+background-color: #141414;
+text-align: justify;
+}
+
+::selection {
+    color: #141414;
+    background: white;
+  }
+
+  .container {
+    width: 768px;
+    margin: auto;
+  }
+
+  .occupation {
+    margin-top: -20px;
+    padding-bottom: 20px;
+  }
+
+  .education-item, .work-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .education-item p, .work-item p {
+    margin: 0;
+  }
+  
+  .education-item .center, .work-item .center {
+    text-align: center;
+    flex: 1;
+  }
+.content-list-item {
+    list-style-type: "-";
+}
+  
+.marquee {
+    display: flex;
+    block-size: var(--marquee-item-height);
+    margin-block: var(--marquee-item-height);
+    position: relative;
+    overflow-x: hidden;
+    mask-image: linear-gradient(
+      to right,
+      hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / 1) 20%,
+      hsl(0 0% 0% / 1) 80%,
+      hsl(0 0% 0% / 0)
+    );
+  }
+  
+  .marquee--8 {
+    --marquee-item-width: 20px;
+    --marquee-item-height: 60px;
+    --marquee-duration: 36s;
+    --marquee-items: 8;
+  }
+
+  .marquee__item {
+    --marquee-item-offset: max(
+      calc(var(--marquee-item-width) * var(--marquee-items)),
+      calc(100% + var(--marquee-item-width))
+    );
+    --marquee-delay: calc(var(--marquee-duration) / var(--marquee-items) * (var(--marquee-items) - var(--marquee-item-index)) * -1);
+    position: absolute;
+    inset-inline-start: var(--marquee-item-offset);
+    transform: translateX(-50%);
+    animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite;
+  }
+  
+  .marquee__item:nth-child(4n) {
+    border-top-right-radius: 1rem;
+  }
+  
+  .marquee__item:nth-child(4n + 1) {
+    border-bottom-right-radius: 1rem;
+  }
+  
+  .marquee__item:nth-child(4n + 2) {
+    border-bottom-left-radius: 1rem;
+  }
+  
+  .marquee__item:nth-child(4n + 3) {
+    border-top-left-radius: 1rem;
+  }
+  
+  .marquee--8 .marquee__item:nth-of-type(1) {
+    --marquee-item-index: 1;
+  }
+  
+  .marquee--8 .marquee__item:nth-of-type(2) {
+    --marquee-item-index: 2;
+  }
+  
+  .marquee--8 .marquee__item:nth-of-type(3) {
+    --marquee-item-index: 3;
+  }
+  
+  .marquee--8 .marquee__item:nth-of-type(4) {
+    --marquee-item-index: 4;
+  }
+  
+  .marquee--8 .marquee__item:nth-of-type(5) {
+    --marquee-item-index: 5;
+  }
+  
+  .marquee--8 .marquee__item:nth-of-type(6) {
+    --marquee-item-index: 6;
+  }
+  
+  .marquee--8 .marquee__item:nth-of-type(7) {
+    --marquee-item-index: 7;
+  }
+  
+  .marquee--8 .marquee__item:nth-of-type(8) {
+    --marquee-item-index: 8;
+  }
+
+  @keyframes go {
+    to {  
+      inset-inline-start: calc(var(--marquee-item-width) * -1);
+    }
+  }
+
+
+  form {
+    margin: 0 auto;
+}
+
+label {
+    display: block; /* Make labels block elements so they stack vertically */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Optional: make labels bold */
+}
+
+input[type="text"], 
+textarea {
+    width: 100%; /* Make input and textarea take full width of the form */
+    padding: 10px;
+    margin-bottom: 15px; /* Space between elements */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+textarea {
+    height: 150px; /* Adjust height as needed */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+input[type="submit"] {
+    width: 100%; /* Make the submit button take full width of the form */
+    background-color: white; /* Green background */
+    color: black; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #f0f0f0; /* Darker green when hovered */
+}
+
+
+footer {
+    width: 100%; /* Ensures footer spans the full width of the viewport */
+    padding-top: 100px;
+    background-color: transparent; /* Makes footer blend with body background */
+    color: white; /* Sets text color to white */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.top-line {
+    border-top: 1px solid #555; /* Slightly darker line for better contrast */
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%; /* Ensures footer spans the full width of the viewport */
+    background-color: transparent; /* Makes footer blend with body background */
+    color: white; /* Sets text color to white */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    margin: auto; /* Centers the footer within the viewport */
+    text-align: center; /* Center-aligns text if needed */
+}
+
+.top-line {
+    border-top: 1px solid #555; /* Slightly darker line for better contrast */
+    margin-bottom: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.name-footer {
+    margin-left: 10px;
+}
+
+.rights {
+    margin-right: 10px;
+}
