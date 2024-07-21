@@ -253,3 +253,81 @@ a {
 .name-container .name {
   margin: 0;
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .name-container, .education-item, .work-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .name-container {
+    margin-bottom: 10px;
+  }
+
+  .education-item p, .work-item p {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .education-item .center, .work-item .center {
+    text-align: left;
+  }
+
+  .marquee {
+    --marquee-item-width: 40px; /* Adjust size for smaller screens */
+    --marquee-item-height: 40px;
+    --marquee-duration: 24s; /* Speed up marquee for smaller screens */
+  }
+
+  .marquee__item {
+    --marquee-item-offset: max(
+      calc(var(--marquee-item-width) * var(--marquee-items)),
+      calc(100% + var(--marquee-item-width))
+    );
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .name-footer, .rights {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 1.5em;
+  }
+
+  .occupation {
+    font-size: 1em;
+  }
+
+  .content-list-item {
+    font-size: 0.9em;
+  }
+
+  .marquee {
+    --marquee-item-width: 30px; /* Further adjust size for very small screens */
+    --marquee-item-height: 30px;
+    --marquee-duration: 18s; /* Further speed up marquee for very small screens */
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+  }
+
+  footer {
+    padding-top: 50px;
+  }
+}
