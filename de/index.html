@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tunahan Karakaya</title>
+  <style>
+    /* Styling für den Container zur Ausrichtung der Elemente */
+    .container {
+      position: relative; /* Sicherstellen, dass untergeordnete Elemente relativ zu diesem positioniert werden können */
+    }
+    .language-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 0; /* Mit dem oberen Rand des Containers ausrichten */
+    }
+    .language-toggle a {
+      text-decoration: none;
+      color: white; /* Weiße Textfarbe */
+      margin-left: 10px;
+      font-weight: bold;
+    }
+    .language-toggle a:hover {
+      text-decoration: underline;
+    }
+    .name-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white; /* Sicherstellen, dass der Name-Text weiß ist */
+    }
+    .name-container .name {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- Sprachumschalter -->
+  <div class="language-toggle">
+    <a href="#" onclick="switchLanguage('en')">EN</a>
+    <a href="#" onclick="switchLanguage('de')">DE</a>
+  </div>
+
+  <!-- Name und Sprachumschalter ausgerichtet -->
+  <div class="name-container">
+    <h2 class="name">Tunahan Karakaya</h2>
+  </div>
+
+  <p class="occupation">Software-Entwickler</p>
+  <p class="header-text">
+    Hallo, ich studiere Informatik an der JKU in Linz und habe eine Leidenschaft für das Designen und Entwickeln von Web-Apps. Es bereitet mir Freude, Ideen auf dem Bildschirm zum Leben zu erwecken, und ich liebe es, die neuesten Technologietrends zu erkunden. Auch das Automatisieren von Workflows zur Effizienzsteigerung ist ein Bereich, in den ich gerne eintauche.
+    Ich bin auch fasziniert von Psychologie, insbesondere im Bereich allgemeines Wissen und self improvement. Dieses Interesse befeuert meine Neugier und hilft mir, sowohl persönlich als auch beruflich zu wachsen.
+    Du kannst auch meine Projekte erkunden oder mich anschreiben, wenn du gerne <a href="mailto:me@tunahan.at">in Kontakt treten</a> möchtest!
+  </p>
+  <h2>Technologien, mit denen ich vertraut bin</h2>
+  <div class="marquee marquee--8">
+    <img class="marquee__item" src="icons/c-sharp.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/confluence.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/creative-cloud.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/git.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/gnu-bash.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/java.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/jira.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/letter-c.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/mongodb.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/social.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/sql-server.png" width="50" height="50" alt="">
+    <img class="marquee__item" src="icons/unity.png" width="50" height="50" alt="">
+  </div>
+  <h2>Berufserfahrung</h2>
+  <div class="work-item">
+    <p class="left">Software-Testingenieur</p>
+    <p class="center">Fronius International</p>
+    <p class="right">Jun 2023 – Feb 2024</p>
+  </div>
+  <div class="content">
+    <li class="content-list-item">61 Tests in der Testpipeline verwaltet und deren reibungslose Ausführung sichergestellt.</li>
+    <li class="content-list-item">23 neue Tests in der Pipeline entwickelt und erfolgreich implementiert, unter Verwendung des C# .NET Test Frameworks.</li>
+    <li class="content-list-item">Testautomatisierungsprozesse verbessert und damit die Effizienz erheblich gesteigert.</li>
+    <li class="content-list-item">10 Fehlerberichte eingereicht, um die laufende Qualitätssicherung zu unterstützen.</li>
+    <li class="content-list-item">Einhaltung der Qualitätsstandards und Best Practices sichergestellt.</li>
+  </div>
+  <br>
+  <h2>Bildung</h2>
+  <div class="education-item">
+    <p class="left">Bachelor of Science, Informatik</p>
+    <p class="center">JKU Linz</p>
+    <p class="right">Mär 2024 - aktuell</p>
+  </div>
+  <div class="content">
+    <li class="content-list-item">
+      Datenstrukturen und Algorithmen 1, Elektronik, Softwareentwicklung 1, Betriebssysteme
+    </li>
+    <br>
+    <br>
+  <div class="education-item">
+    <p class="left">Matura, Informationstechnologie</p>
+    <p class="center">HTL Wels</p>
+    <p class="right">Sept 2017 – Jun 2022</p>
+  </div>
+  <div class="content">
+    <li class="content-list-item">
+      <b>Softwareentwicklung:</b> OOP, Datentypen, Funktionen, Schnittstellen, Klassen, Datenstrukturen, Netzwerke, Sockets, Streams, Threads, Multithreading, JavaFX, JDBC
+    </li>
+    <li class="content-list-item">
+      <b>Projektmanagement: </b>Anforderungsdokumentation, Projektleitfaden, Diagramme, Agile Methoden
+    </li>
+    <li class="content-list-item">
+      <b>Systemtechnik: </b>Betriebssysteme, Prozesse/Threads, Deadlocks, Speicherverwaltung, Dateisysteme, Bash-Skripting, Arduino, dezentrale Systeme, Raspberry Pi, Full-Stack-Webentwicklung (Vue.js, Node.js), virtuelle Maschinen
+    </li>
+    <li class="content-list-item">
+      <b>Medientechnik: </b>Theorie der Videotechnik, HTML, CSS, JavaScript, Adobe Creative Cloud
+    </li>
+    <li class="content-list-item">
+      <b>Netzwerktechnik:</b> CCNA Routing & Switching, Netzwerk-Konfiguration, Packet Tracer, Kali Linux, Wireshark
+    </li>
+    <li class="content-list-item">
+      <b>Informationssysteme:</b> Datenbanksysteme, Microsoft SQL, Normalisierung, DSGVO, relationale Datenbanken, ER-Diagramme, SAP, MongoDB
+    </li>
+  </div>  
+<br>
+<h2>Kontakt</h2>
+<p>Du kannst mich per <a href="mailto:me@tunahan.at">E-Mail</a> kontaktieren</p>
+<footer>
+  <div class="top-line"></div>
+  <div class="footer-content">
+      <span class="name-footer">Tunahan Karakaya</span>
+      <span class="rights">Alle Rechte vorbehalten</span>
+  </div>
+</footer>
+</div>
+
+<script>
+  function switchLanguage(lang) {
+    const path = window.location.pathname;
+    const newPath = path.replace(/\/(en|de)\//, `/${lang}/`);
+    window.location.pathname = newPath;
+  }
+</script>
+</body>
+</html>

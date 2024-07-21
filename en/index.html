@@ -5,13 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Tunahan Karakaya</title>
+  <style>
+    /* Styling for the container to align items */
+    .container {
+      position: relative; /* Ensure that child elements can be positioned relative to this */
+    }
+    .language-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 0; /* Align with the top of the container */
+    }
+    .language-toggle a {
+      text-decoration: none;
+      color: white; /* White text color */
+      margin-left: 10px;
+      font-weight: bold;
+    }
+    .language-toggle a:hover {
+      text-decoration: underline;
+    }
+    .name-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white; /* Ensure name text is white */
+    }
+    .name-container .name {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
 <div class="container">
-  <h2 class="name">Tunahan Karakaya</h1>
+  <!-- Language toggler -->
+  <div class="language-toggle">
+    <a href="#" onclick="switchLanguage('en')">EN</a>
+    <a href="#" onclick="switchLanguage('de')">DE</a>
+  </div>
+
+  <!-- Name and language toggler aligned -->
+  <div class="name-container">
+    <h2 class="name">Tunahan Karakaya</h2>
+  </div>
+
   <p class="occupation">Software Developer</p>
   <p class="header-text">
-    hi, studying Computer Science at JKU in Linz, I have a passion for designing and building web apps. I find joy in bringing ideas to life on the screen and love exploring the latest tech trends. Automating workflows to enhance efficiency is another area I enjoy diving into.
+    Hi, studying Computer Science at JKU in Linz, I have a passion for designing and building web apps. I find joy in bringing ideas to life on the screen and love exploring the latest tech trends. Automating workflows to enhance efficiency is another area I enjoy diving into.
     I'm also fascinated by psychology, especially when it comes to general knowledge and self-improvement. This interest fuels my curiosity and helps me grow both personally and professionally.
     Feel free to explore my projects and reach out if you'd like to <a href="mailto:me@tunahan.at">connect</a>!
   </p>
@@ -38,10 +78,10 @@
   </div>
   <div class="content">
     <li class="content-list-item">Managed 61 tests in the test pipeline, ensuring their smooth execution.</li>
-  <li class="content-list-item">Developed and successfully implemented 23 new tests in the pipeline using the C# .NET Test Framework.</li>
-  <li class="content-list-item">Enhanced test automation processes, significantly improving efficiency.</li>
-  <li class="content-list-item">Submitted 10 bug reports to support ongoing quality assurance.</li>
-  <li class="content-list-item">Ensured adherence to quality standards and best practices.</li>
+    <li class="content-list-item">Developed and successfully implemented 23 new tests in the pipeline using the C# .NET Test Framework.</li>
+    <li class="content-list-item">Enhanced test automation processes, significantly improving efficiency.</li>
+    <li class="content-list-item">Submitted 10 bug reports to support ongoing quality assurance.</li>
+    <li class="content-list-item">Ensured adherence to quality standards and best practices.</li>
   </div>
   <br>
   <h2>Education</h2>
@@ -92,5 +132,13 @@
   </div>
 </footer>
 </div>
+
+<script>
+  function switchLanguage(lang) {
+    const path = window.location.pathname;
+    const newPath = path.replace(/\/(en|de)\//, `/${lang}/`);
+    window.location.pathname = newPath;
+  }
+</script>
 </body>
 </html>
