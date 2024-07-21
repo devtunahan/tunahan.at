@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="de/style.css">
   <title>Tunahan Karakaya</title>
   <style>
-    /* Styling for the container to align items */
     .container {
-      position: relative; /* Ensure that child elements can be positioned relative to this */
+      position: relative;
     }
     .language-toggle {
       position: absolute;
       top: 0;
       right: 0;
-      margin-top: 0; /* Align with the top of the container */
+      margin-top: 0;
     }
     .language-toggle a {
       text-decoration: none;
-      color: white; /* White text color */
+      color: white;
       margin-left: 10px;
       font-weight: bold;
     }
@@ -29,7 +28,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: white; /* Ensure name text is white */
+      color: white;
     }
     .name-container .name {
       margin: 0;
@@ -38,13 +37,10 @@
 </head>
 <body>
 <div class="container">
-  <!-- Language toggler -->
   <div class="language-toggle">
-    <a href="#" onclick="switchLanguage('en')">EN</a>
-    <a href="#" onclick="switchLanguage('de')">DE</a>
+    <a href="https://tunahan.at/en/index.html">EN</a>
+    <a href="https://tunahan.at/de/index.html">DE</a>
   </div>
-
-  <!-- Name and language toggler aligned -->
   <div class="name-container">
     <h2 class="name">Tunahan Karakaya</h2>
   </div>
@@ -132,13 +128,5 @@
   </div>
 </footer>
 </div>
-
-<script>
-  function switchLanguage(lang) {
-    const path = window.location.pathname;
-    const newPath = path.replace(/\/(en|de)\//, `/${lang}/`);
-    window.location.pathname = newPath;
-  }
-</script>
 </body>
 </html>
