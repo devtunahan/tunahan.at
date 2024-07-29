@@ -35,10 +35,6 @@ body {
   margin: 0;
 }
 
-.language-toggle {
-  margin-top: 0;
-}
-
 .occupation {
   margin-top: 10px; /* Increased margin to avoid overlap */
   padding-bottom: 20px;
