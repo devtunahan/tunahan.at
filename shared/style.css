@@ -40,7 +40,7 @@ body {
 }
 
 .occupation {
-  margin-top: 30px; /* Increased margin to avoid overlap */
+  margin-top: 10px; /* Increased margin to avoid overlap */
   padding-bottom: 20px;
 }
 
@@ -61,6 +61,7 @@ body {
 }
 
 .content-list-item {
+  margin-bottom: 20px;
   list-style-type: "-";
 }
 
@@ -80,7 +81,7 @@ body {
 }
 
 .marquee--8 {
-  --marquee-item-width: 20px;
+  --marquee-item-width: 30px;
   --marquee-item-height: 60px;
   --marquee-duration: 36s;
   --marquee-items: 8;
@@ -231,7 +232,7 @@ a {
 
 .language-toggle {
   position: absolute;
-  top: 0;
+  top: 8px;
   right: 0;
   margin-top: 0;
 }
@@ -258,10 +259,9 @@ a {
 @media (max-width: 768px) {
   .container {
     width: 100%;
-    padding: 0 10px;
   }
 
-  .name-container, .education-item, .work-item {
+  .education-item, .work-item {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -315,6 +315,7 @@ a {
 
   .content-list-item {
     font-size: 0.9em;
+    margin-bottom: 20px;
   }
 
   .marquee {
