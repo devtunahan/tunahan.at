@@ -315,9 +315,14 @@ a {
   }
 
   .marquee {
-    --marquee-item-width: 30px; /* Further adjust size for very small screens */
-    --marquee-item-height: 30px;
+    --marquee-item-width: 50px; /* Further adjust size for very small screens */
+    --marquee-item-height: 50px;
     --marquee-duration: 18s; /* Further speed up marquee for very small screens */
+  }
+
+  .marquee__item {
+    width: 50px;
+    height: 50px;
   }
 
   input[type="submit"] {
